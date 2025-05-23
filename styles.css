@@ -23,7 +23,10 @@
     --dark-pink: #BF6475;
     --hot-pink: #F15572;
     --purpur: #6D597A;
-    --pink: #826c7f;
+    --pastel-blue: #3889bb;
+    --dark-pastel-blue: #10537e;
+    --neo-orange: #d68c45;
+    
 }
 
 body {
@@ -81,6 +84,16 @@ body {
 
 .yellow-text {
     color: var(--neo-bright-yellow);
+    font-weight: bold;
+}
+
+.orange-text {
+    color: var(--neo-orange);
+    font-weight: bold;
+}
+
+.pink-text {
+    color: var(--pink);
     font-weight: bold;
 }
 
@@ -194,7 +207,7 @@ body {
 
 @media (min-width: 1500px) {
     .header-container {
-        padding: 100px 400px 20px;
+        padding: 100px 360px 20px;
     }
 }
 
@@ -253,7 +266,7 @@ body {
 
 @media (min-width: 1500px) {
     .content-section {
-        padding: 100px 400px 20px;
+        padding: 100px 360px 20px;
     }
 }
 
@@ -270,7 +283,7 @@ body {
 .content-section a,
 .about-me a,
 .card a {
-    color: var(--light-slate);
+    color: var(--pastel-blue);
     font-weight: bold;
     text-decoration: none;
 }
@@ -278,7 +291,7 @@ body {
 /* Hover state */
 .content-section a:hover,
 .about-me a:hover {
-    color: var(--medium-slate);
+    color: var(--dark-pastel-blue);
     text-decoration: underline; 
 }
 

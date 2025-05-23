@@ -1,18 +1,11 @@
 ### Indev version of my personal website
 https://nick-sutton.github.io/personal-website-v1/
 
-### TODO
-* Fix formatting on smaller displays(large displays need more space on sides then small ones)
-* Optimize CSS
-* add better fade in effect
-* Improve software cards
-* Make software cards clickable like links and animate them when hovered
-* Home-Red, Research-Green, Software-Blue, Personal - purple or yellow
-* Make text go under image if there is space
-* Make acedimic interest in home page link to sections in research page
-* find a consistent color pallete
-* Find a new blue to use
+### Future Updates
 * add darkmode and light mode
+* Determine best font and element size
+* Optimize CSS (A losing battle)
+* find a consistent color pallete
 
 ### Color Pallete
 * light-blue: #5A5C87
@@ -25,7 +18,7 @@ https://nick-sutton.github.io/personal-website-v1/
 * dark-green: #337151
 * light-purple: #877DBD
 * dark-purple: #5E548E
-* light-orange:
+* light-orange: #d68c45
 * dark-orange:
 * dark-slate: #202732
 * medium-slate: #313A49
