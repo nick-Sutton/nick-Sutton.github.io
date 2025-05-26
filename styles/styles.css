@@ -115,8 +115,8 @@ body {
     color: var(--neo-green);
 }
 
-.navbar[data-bs-theme="dark"] .nav-link-personal:hover {
-    color: var(--neo-bright-yellow);
+.navbar[data-bs-theme="dark"] .nav-link-experience:hover {
+    color: var(--neo-orange);
 }
 
 /* Active state styles for nav links */
@@ -132,8 +132,8 @@ body {
     color: var(--neo-green) !important;
 }
 
-.navbar[data-bs-theme="dark"] .nav-link-personal.active {
-    color: var(--neo-bright-yellow) !important;
+.navbar[data-bs-theme="dark"] .nav-link-experience.active {
+    color: var(--neo-orange) !important;
 }
 
 /* Active colors */
@@ -149,8 +149,8 @@ body {
     color: var(--neo-green) !important;
 }
 
-.navbar[data-bs-theme="dark"] .nav-link-personal[aria-current="page"] {
-    color: var(--neo-bright-yellow) !important;
+.navbar[data-bs-theme="dark"] .nav-link-experience[aria-current="page"] {
+    color: var(--neo-orange) !important;
 }
 
 .navbar {
@@ -597,7 +597,7 @@ body {
     transition: all 0.2s ease;
 }
 
-.personal-content {
+.experience-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -656,3 +656,100 @@ body {
     color: var(--oat-white);
     font-size: medium;
 }
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.experience-card {
+    display: flex;
+    background-color: var(--medium-grey);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-style: solid;
+    border-color:var(--neo-orange);
+}
+
+.company-logo {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.company-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.job-header {
+    margin-bottom: 8px;
+}
+
+.job-title {
+    margin: 0;
+    color: var(--oat-white);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.company-name {
+    color: var(--neo-orange);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.job-meta {
+    margin-bottom: 12px;
+    color: var(--light-slate);
+    font-size: 0.95rem;
+}
+
+.job-location {
+    font-style: italic;
+}
+
+.job-description {
+    color: var(--oat-white);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+    }
+    
+    .company-logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 160px;
+        height: 160px;
+    }
+}
+

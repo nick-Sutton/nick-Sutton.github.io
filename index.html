@@ -20,6 +20,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <!--<li class="nav-item"><a class="nav-link nav-link-home" href="#home">Home</a></li>-->
                     <li class="nav-item"><a class="nav-link nav-link-about" href="#" data-section="about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-experience" href="#" data-section="experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-research" href="#" data-section="research">Research</a></li>
                     <li class="nav-item"><a class="nav-link nav-link-projects" href="#" data-section="projects">Software</a></li>
                     <!--<li class="nav-item"><a class="nav-link nav-link-personal" href="#" data-section="personal">Personal</a></li>-->
@@ -35,7 +36,7 @@
 
     <main id="content-container" class="container-fluid">
         <!--About Section-->
-        <section id="about-section" class="about-section content-section">
+        <section id="about-section" class="content-section">
             <div id="section-title" class="section-title red-text">> about.</div>
             <div class="about-content">
                 <div class="about-text">
@@ -80,14 +81,43 @@
             </div>
         </section>
 
+        <!--Experience Section-->
+        <section id="experience-section" class="content-section">
+            <div id="section-title" class="section-title orange-text">> experience.</div>
+            <div class="experience-content">
+                <div class="experience-cards">
+
+                    <!-- Experience Card 1 -->
+                    <div class="experience-card">
+                        <div class="company-logo">
+                            <img src="./assets/images/HIER_logo.png" alt="HIER_logo">
+                        </div>
+                        <div class="experience-details">
+                            <div class="job-header">
+                                <h3 class="job-title">Undergraduate Researcher</h3>
+                                <div class="company-name">HIER Lab</div>
+                            </div>
+                            <div class="job-meta">
+                                <span class="job-date">June 2025 - Present</span>
+                                <span class="job-location">• Hybrid</span>
+                            </div>
+                            <div class="job-description">
+                                <p>Developed a motion capture API for validaition of robot IMU data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--research Section-->
-        <section id="research-section" class="research-section content-section">
+        <section id="research-section" class="content-section">
             <div id="section-title" class="section-title purple-text">> research.</div>
             <div class="research-content">
                 <div class="research-text">
                     <p>My research focuses on developing autonomous robots capable of operating safely and effectively in complex, 
                     human-centered environments. I'm particularly interested in enabling robots to assist with daily tasks currently inaccessible to many people. Applications of these Robots include helping older adults with household chores, 
-                    expanding mobility options for those with physical limitations, or handling routine errands for busy families. 
+                    assisting disaster relief personnel in dangerous environments, or handling routine errands for busy families. 
                     The common thread among these types of Robots is that they must perceive and reason about dynamic 
                     environments while safely navigating around humans. </p>
                 
@@ -98,7 +128,7 @@
             </div>
 
             <!-- Publications -->
-            <div id="section-title" class="section-title yellow-text">> publications.</div>
+            <div id="section-title" class="section-title purple-text">> publications.</div>
             <div class="publications-content">
 
                 <div class="publication-card">
@@ -219,7 +249,7 @@
         </section>
 
         <!--Projects Section-->
-        <section id="projects-section" class="projects-section content-section">
+        <section id="projects-section" class="content-section">
             <div id="section-title" class="section-title green-text">> software.</div>
             <div class="project-content">
                 <a href="https://github.com/nick-Sutton/Gaggle" class="card software-card" target="_blank">
@@ -271,13 +301,6 @@
                         </div>
                     </div>
                 </a>
-            </div>
-        </section>
-
-        <!--personal Section-->
-        <section id="personal-section" class="personal-section content-section">
-            <div id="section-title" class="section-title blue-text">> personal.</div>
-            <div class="personal-content">
             </div>
         </section>
 
