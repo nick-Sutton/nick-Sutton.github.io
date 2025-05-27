@@ -26,6 +26,7 @@
     --pastel-blue: #3889bb;
     --dark-pastel-blue: #10537e;
     --neo-orange: #d68c45;
+    --dark-orange: #945f2e;
     
 }
 
@@ -306,38 +307,23 @@ body {
 }
 
 .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 30px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.about-right {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.about-info {
-    display: flex;
-    flex: row;
-    gap: 8px;
+    overflow: hidden;
 }
 
 .about-headshot {
-    /* flex: 0 0 auto; */
+    float: right;
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 2%;
+    border-radius: 5%;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .about-text {
-    flex: 1; /* Take remaining space */
-    min-width: 300px; /* Minimum width before wrapping */
     font-size: 23px;
 }
 
@@ -347,20 +333,20 @@ body {
 
 @media (max-width: 768px) {
     .about-content {
-        flex-direction: column;
         padding-left: 15px;
         padding-right: 15px;
     }
     
     .about-headshot {
+        float: none;
         width: 100%;
         max-width: 300px;
         height: auto;
-        margin-bottom: 20px;
+        margin: 20px auto 0 auto;
     }
     
     .about-text {
-        min-width: 100%;
+        text-align: left;
     }
 }
 
@@ -704,6 +690,14 @@ body {
     font-weight: 500;
 }
 
+.company-name a {
+    color: var(--neo-orange);
+}
+
+.company-name a:hover{
+    color: var(--dark-orange);
+}
+
 .job-meta {
     margin-bottom: 12px;
     color: var(--light-slate);
@@ -748,15 +742,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Experience Cards Container */
-.experience-cards-container {
-    width: 100%;
-    padding: 0 8px;
-}
-
 .contact-text {
     color: var(--oat-white);
-    font-size: 1.1rem;
+    font-size: 23px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -795,4 +783,10 @@ body {
     .action-links {
         gap: 15px;
     }
+}
+
+/* Experience Cards Container */
+.experience-cards-container {
+    width: 100%;
+    padding: 0 8px;
 }
