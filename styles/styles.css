@@ -335,25 +335,6 @@ body {
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
 }
 
-.resume-link {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    color: var(--oat-white)!important;
-    background-color: var(--light-slate);
-    text-decoration: none!important;
-    gap: 8px;
-    align-items: center;
-    font-weight: bold;
-    padding: 4px 12px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.resume-link:hover {
-    background-color: var(--medium-slate);
-}
-
 .about-text {
     flex: 1; /* Take remaining space */
     min-width: 300px; /* Minimum width before wrapping */
@@ -753,3 +734,65 @@ body {
     }
 }
 
+/* Experience Content Container */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Opportunity Container */
+.contact-container {
+    width: 100%;
+    padding: 0 8px;
+    margin-bottom: 20px;
+}
+
+/* Experience Cards Container */
+.experience-cards-container {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.contact-text {
+    color: var(--oat-white);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resume-btn {
+    display: flex;
+    color: var(--oat-white)!important;
+    background-color: var(--light-slate);
+    text-decoration: none!important;
+    gap: 5px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: var(--medium-slate);
+    transform: translateY(-3px);
+}
+
+.action-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .opportunity-container,
+    .experience-cards-container {
+        padding: 0 15px;
+    }
+    
+    .action-links {
+        gap: 15px;
+    }
+}
