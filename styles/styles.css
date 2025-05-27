@@ -14,15 +14,9 @@
     --neo-red: #BB3547;
     --neo-shadow-green: #337151;
     --neo-green: #469C70;
-    --neo-pale-yellow: #F6D568;
     --neo-shadow-yellow: #FFB703;
     --neo-bright-yellow: #D3C02E;
-    --lapis: #255F85;
-    --dar-lapis: #004e98;
     --pink: #F48498;
-    --dark-pink: #BF6475;
-    --hot-pink: #F15572;
-    --purpur: #6D597A;
     --pastel-blue: #3889bb;
     --dark-pastel-blue: #10537e;
     --neo-orange: #d68c45;
@@ -325,6 +319,7 @@ body {
 
 .about-text {
     font-size: 23px;
+    padding: 0 5px;
 }
 
 .about-text p {
@@ -360,9 +355,10 @@ body {
 }
 
 .research-text {
-    flex: 1; /* Take remaining space */
-    min-width: 300px; /* Minimum width before wrapping */
+    flex: 1;
+    min-width: 300px;
     font-size: 23px;
+    padding: 0 5px;
 }
 
 .research-text p {
@@ -738,7 +734,7 @@ body {
 /* Opportunity Container */
 .contact-container {
     width: 100%;
-    padding: 0 8px;
+    padding: 0 5px;
     margin-bottom: 20px;
 }
 
