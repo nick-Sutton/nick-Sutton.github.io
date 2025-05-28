@@ -504,7 +504,7 @@ body {
     color: var(--oat-white);
 }
 
-.project-content {
+.software-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
