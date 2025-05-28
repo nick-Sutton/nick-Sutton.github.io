@@ -3,9 +3,10 @@ https://nick-sutton.github.io/personal-website-v1/
 
 ### Future Updates
 * add darkmode and light mode
-* Determine best font and element size
 * Optimize CSS (A losing battle)
 * find a consistent color pallete
+* Add some skills to the experience contact text
+* Add used technolgies flags to experience cards
 
 ### Color Pallete
 * light-blue: #5A5C87
