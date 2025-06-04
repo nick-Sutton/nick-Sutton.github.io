@@ -1,12 +1,7 @@
-### Indev version of my personal website
-https://nick-sutton.github.io/personal-website-v1/
-
 ### Future Updates
-* add darkmode and light mode
-* Optimize CSS (A losing battle)
-* find a consistent color pallete
-* Add some skills to the experience contact text
-* Add used technolgies flags to experience cards
+* Add dark mode and light mode support
+* Add some skills/technologies to the experience text
+* Add used technologies flags to experience cards
 
 ### Color Pallete
 * light-blue: #5A5C87
