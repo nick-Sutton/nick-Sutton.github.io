@@ -1,4 +1,5 @@
 ### Future Updates
+* Find Replacement cover image
 * Add dark mode and light mode support
 * Add some skills/technologies to the experience text
 * Add used technologies flags to experience cards
