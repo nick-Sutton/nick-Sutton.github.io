@@ -6,453 +6,170 @@
     <title>Nicholas Sutton</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
-        <div class="container-fluid px-4">
-            <!--<a class="navbar-brand" href="#">Nicholas Sutton</a>-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link nav-link-about" href="#" data-section="about">Home</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-experience" href="#" data-section="experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-research" href="#" data-section="research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link nav-link-projects" href="#" data-section="software">Software</a></li>
-                </ul>
+    <!-- Hello Stranger -->
+    <header>
+        <nav>
+            <a href="/" class="site-name">Nicholas Sutton</a>
+            <div class="nav-links">
+                <a href="#about">about</a>
+                <a href="#notes">notes</a>
+                <a href="#research">research</a>
+                <a href="#software">software</a>
             </div>
-        </div>
-    </nav>
-
-    <header class="header-container">
-        <div class="header-hello">Hello, I'm Nick</div>
-        <div class="header-sub">Computer Science and Mathematics at North Carolina State University</div>
+        </nav>
     </header>
 
-    <main id="content-container" class="container-fluid">
-        <!--About Section-->
-        <section id="about-section" class="content-section">
-            <div id="section-title" class="section-title red-text">> about.</div>
-            <div class="about-content">
-                <img src="./assets/images/test.jpg" alt="Nicholas Sutton" class="about-headshot" loading="lazy" >
+    <main>
+        <section id="about">
+            <div class="about-layout">
                 <div class="about-text">
-                    <p>I am an undergraduate student at <a href="https://www.csc.ncsu.edu/">North Carolina State University</a>, majoring in 
-                            Computer Science with a minor in Mathematics. 
-                            I currently work as an undergraduate research assistant in the <a href="https://hier-robotics.github.io/">Hier Lab</a>, where I research learning based approaches to legged robot locomotion.
-
-                    <p>My academic interest include <span class="pink-text">Robot Navigation</span>, <span class="orange-text">Agile Locomotion</span>, and <span class="green-text">Motion Planning</span>. 
-                            I aim to develop robots to safely assist humans with challenging, dangerous, 
-                            or otherwise inaccessible tasks. Besides robotics, I am also interested in Software Systems and Game Development.</p>
-
-                    <p> Outside academics, I like to cook, sculpt, build scale models, go to the gym, and <a href="https://www.goodreads.com/user/show/190561458-nicholas">read</a>. 
-                        I play the bass guitar and love listening to a wide variety of <a href="https://open.spotify.com/user/orange_oats?si=d898cb65fbd44dd7">music</a>.
-                        I also play a lot of <a href="https://backloggd.com/u/Oats_/">games</a>. Some of my favorites include Elden Ring and Minecraft. 
-                        In my free time, I also like to work on small game projects.</p>
-
-                    <p>I am also a recipient of the <a href="https://goodnight.ncsu.edu/">Goodnight Scholarship</a>, 
-                            where I serve as a peer mentor and tutor for new transfer students.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Experience Section-->
-        <section id="experience-section" class="content-section">
-            <div id="section-title" class="section-title orange-text">> experience.</div>
-            <div class="experience-content">
-                <div class="contact-container">
-                    <p class="contact-text">
-                        I am always seeking opportunities to work on developing technologies in the robotics space. 
-                        If you are interested in me or my work, please feel free to reach out.
+                    <h1>Hello, I'm Nick.</h1>
+                    <p>I'm an undergraduate student at <a href="https://www.csc.ncsu.edu/">North Carolina State
+                        University</a>, studying Computer Science with a minor in Mathematics. 
+                        My interests include 
+                        <span class="kw-r">Robotics</span>,
+                        <span class="kw-g">Planning</span>, and
+                        <span class="kw-b">Algorithms</span>.
                     </p>
-                    <div class="action-links">
-                        <a href="./assets/nwsutton_resume.pdf" download="Nicholas_Sutton_Resume.pdf" class="resume-btn">
-                            <span class="material-icons">file_download</span> Resume
-                        </a>
-                        <div class="contact-links">
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/nicholas-sutton13/" class="social-link target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/nick-Sutton" class="social-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                </svg>
-                            </a>
-                            <a href="mailto:nicksutton46@gmail.com" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                                </svg>
-                            </a>
-                        </div>
+
+                    <p>In my free time I like to cook, build scale models, go to the gym, and
+                        <a href="https://www.goodreads.com/user/show/190561458-nicholas">read</a>. I play
+                        bass guitar and love listening to a wide variety of
+                        <a href="https://open.spotify.com/user/orange_oats?si=d898cb65fbd44dd7">music</a>. I also play
+                        a lot of <a href="https://backloggd.com/u/Oats_/">games</a> and I work on small games projects. My favorites include
+                        Elden Ring, Minecraft, and Overwatch.
+                    </p>
+
+                    <div class="contact-row">
+                        <a href="./assets/nwsutton_resume.pdf" download="Nicholas_Sutton_Resume.pdf">resume ↓</a>
+                        <a href="https://www.linkedin.com/in/nicholas-sutton13/" target="_blank">linkedin</a>
+                        <a href="https://github.com/nick-Sutton" target="_blank">github</a>
+                        <a href="mailto:nicksutton46@gmail.com">email</a>
                     </div>
-                </div>
-
-                <div class="experience-cards">
-
-                    <div class="experience-card">
-                        <div class="company-logo">
-                            <img src="./assets/images/HIER_logo.png" alt="HIER_logo">
-                        </div>
-                        <div class="experience-details">
-                            <div class="job-header">
-                                <h3 class="job-title">Undergraduate Researcher</h3>
-                                <div class="company-name">
-                                    <a href="https://hier-robotics.github.io/">Hybrid Intelligent Experimental Robotics (HIER) Lab</a>
-                                </div>
-                            </div>
-                            <div class="job-meta">
-                                <span class="job-date">May 2025 - Present</span>
-                                <span class="job-location">• Raleigh, NC</span>
-                            </div>
-                            <div class="job-description">
-                                <ul>
-                                    <li>Developed a Python teleoperation system for the Unitree Go2 quadrupedal robot, processing real-time motion
-                                        capture data from a 6-camera OptiTrack system at 240Hz</li>
-                                    <li>Designed a Temporal Convolutional Neural Network, achieving 95.46% accuracy in classifying 8 human gait
-                                        modes from 34 biomechanical features derived from motion capture data</li>
-                                    <li>Implemented causal TCN architecture with dilated convolutions and attention mechanisms, outperforming
-                                        baseline CNN models by 6% for real-time gait classification</li>
-                                    <li>Deployed the TCN model on the Unitree Go2 for real-time gait-based control selection, and developed an
-                                        adaptive PD control scheme to enable high-fidelity motion imitation</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-card">
-                        <div class="company-logo">
-                            <img src="./assets/images/acm_ncsu_logo.png" alt="Acm_Logo">
-                        </div>
-                        <div class="experience-details">
-                            <div class="job-header">
-                                <h3 class="job-title">Webmaster and Technical Committee Lead​</h3>
-                                <div class="company-name">
-                                    <a href="https://acm-ncsu.github.io/">Association for Computing Machinery at North Carolina State University​</a>
-                                </div>
-                            </div>
-                            <div class="job-meta">
-                                <span class="job-date">Nov. 2025 - Present</span>
-                                <span class="job-location">• Raleigh, NC</span>
-                            </div>
-                            <div class="job-description">
-                                <ul>
-                                    <li>Designed and maintained the ACM chapter website</li>
-                                    <li>Led the Technical Committee in organizing and executing collaborative coding projects</li>
-                                    <li>Organized technical talks and hands-on coding workshops</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-card">
-                        <div class="company-logo">
-                            <img src="./assets/images/GoodnightScholarslogo.jpg" alt="Goodnight_Logo">
-                        </div>
-                        <div class="experience-details">
-                            <div class="job-header">
-                                <h3 class="job-title">Peer Mentor and Computer Science Tutor</h3>
-                                <div class="company-name">
-                                    <a href="https://goodnight.ncsu.edu/">Goodnight Scholars Program</a>
-                                </div>
-                            </div>
-                            <div class="job-meta">
-                                <span class="job-date">Aug. 2025 - Present</span>
-                                <span class="job-location">• Raleigh, NC</span>
-                            </div>
-                            <div class="job-description">
-                                <ul>
-                                    <li>Mentored transfer students through academic transition via one-on-one meetings and resource guides covering
-                                        course selection, campus navigation, and social integration</li>
-                                    <li>Provided peer tutoring in upper-level CS courses, including Software Development, Operating Systems,
-                                        Algorithms, Computational Theory, and Robotics</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!--research Section-->
-        <section id="research-section" class="content-section">
-            <div id="section-title" class="section-title purple-text">> research.</div>
-            <div class="research-content">
-                <div class="research-text">
-                    <p>My research focuses on developing autonomous robots capable of operating safely and effectively in complex, 
-                    human-centered environments. I'm particularly interested in enabling robots to assist with daily tasks currently inaccessible to many people. Applications of these Robots include helping older adults with household chores, 
-                    assisting disaster relief personnel in dangerous environments, or maintaining the health of crops for busy farmers. 
-                    The common thread among these types of robots is that they must perceive and reason about dynamic 
-                    environments while safely navigating around humans.</p>
-                
-                    <P>My current work explores translating human motion capture data to quadrupedal robots using deep learning-based motion retargeting. This project enables human teleoperators to intuitively control quadrupeds and leverage these robots' superior stability and adaptability. 
-                        This research has applications in controlling quadrupeds in hazardous or inaccessible environments, such as disaster zones or industrial sites, where human-level intelligence is necessary but humans and humanoid robots cannot safely operate.
-                    </P>
-                </div>
-                
+        <hr>
+
+        <section id="notes">
+            <h2><span class="kw-r">></span> Notes_</h2>
+            <!--
+            <div class="post-list">
+                <a href="/notes/undergrad.html" class="post">
+                    <span class="post-title">A Gentle Introduction to Planning</span>
+                    <span class="post-date">2026-04</span>
+                </a>
             </div>
 
-            <!-- Publications -->
-            <div id="section-title" class="section-title purple-text">> publications.</div>
-            <div class="publications-content">
-                <div class="publication-card">
-                    <div class="publication-card-bar"></div>
-                    <div class="publication-card-content">
-                        <h4 class="publication-title">Gait Mode Classification using a Temporal Convolutional Neural Network</h4>
-                        <div class="publication-authors">Nicholas Sutton, Jaemin Lee, Peng Gao</div>
-                        <div class="publication-journal">Undergraduate Thesis, 2026</div>
-                        <div class="publication-abstract">This paper addresses the challenge of real-time
-                                                        human gait classification from motion capture data as a
-                                                        fundamental component of human teleoperation systems for
-                                                        quadrupedal robots. We present a learning-based approach
-                                                        using a Temporal Convolutional Neural Network (TCN) to
-                                                        classify human gaits from motion capture sequences. Our
-                                                        method leverages the temporal modeling capabilities of
-                                                        TCNs to capture the sequential patterns inherent in human
-                                                        locomotion. We compare our model to a Convolutional
-                                                        Neural Network (CNN) and a Bidirectional TCN without
-                                                        causal convolution to validate the performance of our ap­proach.
-                                                    </div>
-                        <div class="publication-tags">
-                            <div class="tech-flag">Classification</div>
-                            <div class="tech-flag">Human Biometrics</div>
-                            <div class="tech-flag">Supervised Learning</div>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="assets/nwsutton_paper.pdf" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
-                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
-                                <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
-                            </svg>
-                            Paper
-                        </a>
+            <div class="post-list">
+                <a href="/notes/undergrad.html" class="post">
+                    <span class="post-title">My Undergraduate Courses</span>
+                    <span class="post-date">2026-04</span>
+                </a>
+            </div>
 
-                        <a href="https://github.com/nick-Sutton/GaitCNN" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-                                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-                            </svg>
-                            Project
-                        </a>
-                        <a href="https://github.com/nick-Sutton/GaitCNN" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                                <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
+            <div class="post-list">
+                <a href="/notes/undergrad.html" class="post">
+                    <span class="post-title">Computer Science Reading List</span>
+                    <span class="post-date">2026-04</span>
+                </a>
+            </div>
+
+            <div class="post-list">
+                <a href="/notes/undergrad.html" class="post">
+                    <span class="post-title">My Linux Config</span>
+                    <span class="post-date">2026-04</span>
+                </a>
+            </div>
+            -->
+            <span>Check back soon...</span>
+        </section>
+
+        <hr>
+
+        <section id="research">
+            <h2><span class="kw-g">></span> Research_</h2>
+
+            <p>I work in the <a href="https://hier-robotics.github.io/">HIER Lab</a> on learning-based approaches
+                to legged robot locomotion. My current focus is translating human motion capture data to quadrupedal
+                robots using deep learning-based motion retargeting.</p>
+
+            <p>My broader interests are in the algorithmic foundations of robot navigation, agile locomotion, and motion planning.
+                I want to build robots that can safely assist people with tasks that are dangerous, physically demanding, or otherwise out
+                of reach.</p>
+            <div class="citation">
+                <span class="cite-title">Teleoperation of Quadruped Robots via Learning-Based Gait Classification of Human Locomotion Data</span><br>
+                <span class="cite-meta"><b>Nicholas Sutton</b>, Jaemin Lee · Undergraduate Research Symposium, 2026</span><br>
+                <div class="cite-links">
+                    <a href="" target="_blank">poster</a>
                 </div>
-
-                <div class="publication-card">
-                    <div class="publication-card-bar"></div>
-                    <div class="publication-card-content">
-                        <h4 class="publication-title">Coming Soon... ❍ᴥ❍ʋ</h4>
-                        <div class="publication-authors">Author 1, Author 2,...</div>
-                        <div class="publication-journal">Journal Name, Year</div>
-                        <div class="publication-abstract">Brief abstract.</div>
-                        <div class="publication-tags">
-                            <div class="tech-flag">Tag</div>
-                            <div class="tech-flag">Tag</div>
-                            <div class="tech-flag">Tag</div>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="LINK_TO_PAPER_PDF" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
-                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
-                                <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
-                            </svg>
-                            Paper
-                        </a>
-
-                        <a href="LINK_TO_PROJECT" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-                                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-                            </svg>
-                            Project
-                        </a>
-                        <a href="LINK_TO_CODE" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                                <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
+            </div>
+            <div class="citation">
+                <span class="cite-title">Gait Mode Classification using a Temporal Convolutional Neural Network</span><br>
+                <span class="cite-meta"><b>Nicholas Sutton</b>, Jaemin Lee, Peng Gao · Undergraduate Thesis, 2026</span><br>
+                <div class="cite-links">
+                    <a href="assets/nwsutton_paper.pdf" target="_blank">paper</a>
+                    <a href="https://github.com/nick-Sutton/GaitCNN" target="_blank">code</a>
                 </div>
-
-                <div class="publication-card">
-                    <div class="publication-card-bar"></div>
-                    <div class="publication-card-content">
-                        <h4 class="publication-title">Coming Soon... ❍ᴥ❍ʋ</h4>
-                        <div class="publication-authors">Author 1, Author 2,...</div>
-                        <div class="publication-journal">Journal Name, Year</div>
-                        <div class="publication-abstract">Brief abstract.</div>
-                        <div class="publication-tags">
-                            <div class="tech-flag">Tag</div>
-                            <div class="tech-flag">Tag</div>
-                            <div class="tech-flag">Tag</div>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="LINK_TO_PAPER_PDF" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
-                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
-                                <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
-                            </svg>
-                            Paper
-                        </a>
-
-                        <a href="LINK_TO_PROJECT" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-                                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-                            </svg>
-                            Project
-                        </a>
-                        <a href="LINK_TO_CODE" class="publication-link" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                                <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
-                            </svg>
-                            Code
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <!--Projects Section-->
-        <section id="software-section" class="content-section">
-            <div id="section-title" class="section-title green-text">> software.</div>
-            <div class="software-content">
-                <a href="https://nick-sutton.github.io/Seally/" class="card software-card" target="_blank">
-                    <img src="./assets/images/seally_logo.png" class="card-img-top" alt="Seally Project">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Seally</h4>
-                        <div class="software-card-text">Seally provides a simple interface for using, implementing, and testing planning algorithms.</div>
-                        <div class="flags">
-                            <div class="tech-flag">Python3</div>
-                            <div class="tech-flag">NumPy</div>
-                            <div class="tech-flag">Pygame</div>
-                        </div>
+        <hr>
+
+        <section id="software">
+            <h2><span class="kw-b">></span> Software_</h2>
+
+            <div class="project-list">
+                <div class="project">
+                    <div class="project-header">
+                        <a href="https://nick-sutton.github.io/Seally/" target="_blank" class="project-name">Seally</a>
+                        <span class="project-tags">Python · NumPy · Pygame</span>
                     </div>
-                </a>
-                <a href="https://github.com/nick-Sutton/fetch-mc" class="card software-card" target="_blank">
-                    <img src="./assets/images/mc_logo.png" class="card-img-top" alt="Fetch-MC">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Fetch-MC</h4>
-                        <div class="software-card-text">Fetch-MC is a terminal-based Minecraft Mod management utility for updating 
-                            mods, resource packs, and shaders from Modrinth. Fetch-MC downloads the latest compatible version of mods 
-                            based on a specified Minecraft version.</div>
-                        <div class="flags">
-                            <div class="tech-flag">Rust</div>
-                            <div class="tech-flag">Tokio</div>
-                            <div class="tech-flag">Clap</div>
-                        </div>
+                    <p>A simple interface for using, implementing, and testing planning algorithms.</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <a href="https://github.com/nick-Sutton/fetch-mc" target="_blank" class="project-name">Fetch-MC</a>
+                        <span class="project-tags">Rust · Tokio · Clap</span>
                     </div>
-                </a>
-                <a href="https://github.com/nick-Sutton/GaitCNN" class="card software-card" target="_blank">
-                    <img src="./assets/images/humanwalk01.png" class="card-img-top" alt="GaitCNN">
-                    <div class="card-body">
-                        <h4 class="software-card-title">GaitCNN</h4>
-                        <div class="software-card-text">Python Implementation of a CNN and TCN for Human Gait Classification.</div>
-                        <div class="flags">
-                            <div class="tech-flag">Python3</div>
-                            <div class="tech-flag">PyTorch</div>
-                            <div class="tech-flag">Scikit-Learn</div>
-                            <div class="tech-flag">NumPy</div>
-                        </div>
+                    <p>Terminal-based Minecraft mod management utility for updating mods, resource packs, and shaders
+                        from Modrinth. Downloads the latest compatible version based on a specified Minecraft version.</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <a href="https://github.com/nick-Sutton/GaitCNN" target="_blank" class="project-name">GaitCNN</a>
+                        <span class="project-tags">Python · PyTorch · Scikit-Learn · NumPy</span>
                     </div>
-                </a>
-                <a href="https://github.com/nick-Sutton/Gaggle" class="card software-card" target="_blank">
-                    <img src="./assets/images/gaggle_image.png" class="card-img-top" alt="Gaggle Project">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Gaggle</h4>
-                        <div class="software-card-text">Gaggle is a web-based automatic team creation system for the Goodnight Scholars intramural sports teams.</div>
-                        <div class="flags">
-                            <div class="tech-flag">Go</div>
-                            <div class="tech-flag">JavaScript</div>
-                            <div class="tech-flag">HTML/CSS</div>
-                            <div class="tech-flag">Docker</div>
-                        </div>
+                    <p>Python implementation of a CNN and TCN for human gait classification.</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <a href="https://github.com/nick-Sutton/Gaggle" target="_blank" class="project-name">Gaggle</a>
+                        <span class="project-tags">Go · JavaScript · Docker</span>
                     </div>
-                </a>
-                <a href="https://github.com/nick-Sutton/MunchieBot" class="card software-card" target="_blank">
-                    <img src="./assets/images/munchie_bot_image.png" class="card-img-top" alt="Munchie Bot Project">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Munchie Bot</h4>
-                        <div class="software-card-text">Munchie Bot is a Discord bot and web scraping tool for automatically updating your server when a new free game is available on the Epic Games Store.</div>
-                        <div class="flags">
-                            <div class="tech-flag">Python3</div>
-                            <div class="tech-flag">PlayWright</div>
-                            <div class="tech-flag">Discord.py</div>
-                            <div class="tech-flag">Docker</div>
-                        </div>
+                    <p>Web-based automatic team creation system for Goodnight Scholars intramural sports teams.</p>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <a href="https://github.com/nick-Sutton/MunchieBot" target="_blank" class="project-name">Munchie Bot</a>
+                        <span class="project-tags">Python · Playwright · Discord.py · Docker</span>
                     </div>
-                </a>
+                    <p>Discord bot and web scraper that automatically notifies your server when a new free game
+                        is available on the Epic Games Store.</p>
+                </div>
             </div>
-
-            
-            <!--Robot Section
-            <div id="section-title" class="section-title green-text">> robots.</div>
-            <div class="software-content">
-                <a href="https://www.unitree.com/g1" class="card software-card" target="_blank">
-                    <img src="./assets/images/unitree_g1_image.png" class="card-img-top" alt="g1 image">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Unitree G1 EDU</h4>
-                        <div class="software-card-text">Developed Imitation Learning based reasoning and motion models for the G1 platform.</div>
-                        <div class="flags">
-                            <div class="tech-flag">ROS2</div>
-                            <div class="tech-flag">C++</div>
-                            <div class="tech-flag">Python3</div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.unitree.com/go2" class="card software-card" target="_blank">
-                    <img src="./assets/images/go2_image.png" class="card-img-top" alt="go2 image">
-                    <div class="card-body">
-                        <h4 class="software-card-title">Unitree G1 EDU</h4>
-                        <div class="software-card-text">Developed SLAM Algorithms for the Go2 Platform.</div>
-                        <div class="flags">
-                            <div class="tech-flag">ROS2</div>
-                            <div class="tech-flag">C++</div>
-                            <div class="tech-flag">Python3</div>
-                        </div>
-                    </div>
-                </a>-->
         </section>
-
     </main>
 
-    <footer class="footer-container">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/nicholas-sutton13/" class="social-link target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                </svg>
-            </a>
-            <a href="https://github.com/nick-Sutton" class="social-link" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                </svg>
-            </a>
-            <a href="mailto:nicksutton46@gmail.com" class="social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 16 16">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                </svg>
-            </a>
-        </div>
-        <div className="footer-text">Created by Nicholas Sutton. ©</div>
+    <footer>
+        <p>Nicholas Sutton © · last updated April 2026</p>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src/app.js"></script>
 </body>
 </html>
