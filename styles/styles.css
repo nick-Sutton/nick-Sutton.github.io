@@ -120,9 +120,10 @@ nav {
     letter-spacing: 0.04em;
 }
 
-.nav-links a:hover {
-    color: var(--text);
-}
+.nav-links a[href="#about"]:hover    { color: #7a5c9e; } /* muted purple */
+.nav-links a[href="#notes"]:hover    { color: #c54a4a; } /* red          */
+.nav-links a[href="#research"]:hover { color: #4b9161; } /* green        */
+.nav-links a[href="#software"]:hover { color: #5c799e; } /* blue         */
 
 /* ── Keyword highlights ── */
 .kw-r { color: #c54a4a; font-weight: bold; }
